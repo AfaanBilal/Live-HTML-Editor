@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ *  Live HTML Editor
+ *  (c) 2012-2016 Afaan Bilal
+ *
+ */
+
+
+using System;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
