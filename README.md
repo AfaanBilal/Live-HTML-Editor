@@ -4,7 +4,7 @@ Live HTML Editor
 Author: **Afaan Bilal ([@AfaanBilal](https://github.com/AfaanBilal))**   
 Author URL: **[Google+](https://google.com/+AfaanBilal)**
 
-##### Project Page: [afaan.cu.cc/Live-HTML-Editor](https://afaan.ml/Live-HTML-Editor)
+##### Project Page: [https://afaan.ml/Live-HTML-Editor](https://afaan.ml/Live-HTML-Editor)
 ##### Download: [Setup, V1.0.0](https://afaan.ml/Live-HTML-Editor/Live-HTML-Editor-1.0.0-Setup.zip)
 
 ## Introduction
