@@ -4,8 +4,8 @@ Live HTML Editor
 Author: **Afaan Bilal ([@AfaanBilal](https://github.com/AfaanBilal))**   
 Author URL: **[Google+](https://google.com/+AfaanBilal)**
 
-##### Project Page: [afaan.cu.cc/Live-HTML-Editor](http://afaan.cu.cc/Live-HTML-Editor)
-##### Download: [Setup, V1.0.0](http://afaan.cu.cc/Live-HTML-Editor/Live-HTML-Editor-1.0.0-Setup.zip)
+##### Project Page: [afaan.cu.cc/Live-HTML-Editor](https://afaan.ml/Live-HTML-Editor)
+##### Download: [Setup, V1.0.0](https://afaan.ml/Live-HTML-Editor/Live-HTML-Editor-1.0.0-Setup.zip)
 
 ## Introduction
 **Live HTML Editor** is a C# .NET Windows desktop app to easily edit HTML documents and
