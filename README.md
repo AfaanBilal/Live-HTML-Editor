@@ -13,6 +13,7 @@ see the result live.
 
 ## Screenshots
 ![Live HTML Editor by Afaan Bilal](https://afaan.ml/screenshots/Live-HTML-Editor.jpg "Live HTML Editor by Afaan Bilal")
+  
 ![Live HTML Editor by Afaan Bilal](https://afaan.ml/screenshots/Live-HTML-Editor-About.jpg "Live HTML Editor by Afaan Bilal")
 
 ### Features
