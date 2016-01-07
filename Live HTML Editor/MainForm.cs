@@ -144,7 +144,7 @@ namespace Live_HTML_Editor
 
             numTabs++;
 
-            if (numTabs >= (maxTabs + 1))
+            if (numTabs > maxTabs)
             {
                 MessageBox.Show("Max Tabs Reached. Can't add more, sorry", "Live HTML Editor");
                 return;
@@ -254,6 +254,7 @@ namespace Live_HTML_Editor
                 mainStatus_lblFileName.Text = "FileName";
                 mainStatus_lblSaved.Text = "Not Saved Yet";
                 wbMain.Navigate("about:blank");
+                numTabs--;
 
                 if (tabs_editor.TabCount < 1)
                 {
