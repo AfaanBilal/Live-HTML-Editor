@@ -197,9 +197,9 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label11.Location = new System.Drawing.Point(146, 390);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(213, 21);
+            this.label11.Size = new System.Drawing.Size(220, 21);
             this.label11.TabIndex = 16;
-            this.label11.Text = "Tap here to hide this window.";
+            this.label11.Text = "Click here to hide this window.";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // ShortcutKeysList
