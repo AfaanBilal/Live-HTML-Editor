@@ -28,21 +28,22 @@ namespace Live_HTML_Editor
         string[] savedFileNames;
         Timer spt;
         About abt;
+        ShortcutKeysList sckeylist;
 
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            /* 
+            /*
              * FULL SCREEN VIEW
              * SEQUENCE => Optional[TopMost(true),] FormBorderStyle(None), WindowState(Max);
              * this.TopMost = true;
-            
-            
+
+
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
              */
             //this.WindowState = FormWindowState.Maximized;
             //this.MaximizeBox = false;
-            
+
             /*
              * DISABLE EDITOR AND OTHER BUTTONS
             */
@@ -105,7 +106,7 @@ namespace Live_HTML_Editor
         private void SetContextMenuForTab(TabPage tb)
         {
             ContextMenu contextMenu = new ContextMenu();
-            
+
             contextMenu.MenuItems.Add(new MenuItem("Cut", cutToolStripMenuItem1_Click));
             contextMenu.MenuItems.Add(new MenuItem("Copy", copyToolStripMenuItem1_Click));
             contextMenu.MenuItems.Add(new MenuItem("Paste", pasteToolStripMenuItem1_Click));
@@ -136,7 +137,7 @@ namespace Live_HTML_Editor
         {
             updateBrowser();
         }
-        
+
         private void AddTab(string tabName = "", string textToInsert = "")
         {
             //enable editor and toolstrip buttons and menustrip Edit
@@ -153,7 +154,7 @@ namespace Live_HTML_Editor
             // Add TabPage
             TabPage tabPage = new TabPage();
             tabPage.Name = "tab" + numTabs;
-            
+
             if (tabName == "")
                 tabPage.Text = "New" + numTabs + ".html";
             else
@@ -223,7 +224,7 @@ namespace Live_HTML_Editor
 
             //highlight html
             tb.SyntaxHighlighter.HTMLSyntaxHighlight(tb.Range);
-            
+
             //find Style fragments
             foreach (var r in tb.GetRanges(@"<style.*?</style>", RegexOptions.Singleline))
             {
@@ -258,7 +259,7 @@ namespace Live_HTML_Editor
 
                 if (tabs_editor.TabCount < 1)
                 {
-                    //disable editor and toolstrip buttons if all tabs closed. 
+                    //disable editor and toolstrip buttons if all tabs closed.
                     EnableEditingButtons(false);
                 }
             }
@@ -269,7 +270,7 @@ namespace Live_HTML_Editor
             Save();
             updateBrowser();
         }
-                
+
         private void Save()
         {
             try
@@ -336,7 +337,7 @@ namespace Live_HTML_Editor
 
                 if (tabs_editor.TabCount < 1)
                 {
-                    //disable editor and toolstrip buttons if all tabs closed. 
+                    //disable editor and toolstrip buttons if all tabs closed.
                     EnableEditingButtons(false);
                 }
                 MessageBox.Show("Error: Please specify a filename to save.", "Live HTML Editor");
@@ -382,7 +383,7 @@ namespace Live_HTML_Editor
                 updateBrowser();
             }
         }
-        
+
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (tabs_editor.TabCount > 0)
@@ -510,7 +511,7 @@ namespace Live_HTML_Editor
                 }
             }
         }
-        
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "Live HTML Editor", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
@@ -528,7 +529,7 @@ namespace Live_HTML_Editor
         #endregion
 
         #region AboutMenuLinks
-        
+
         private void mainstatus_lblCp_Click(object sender, EventArgs e)
         {
             Process.Start("http://amxinfinity.tk");
@@ -542,6 +543,30 @@ namespace Live_HTML_Editor
         private void visitUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("http://amxinfinity.tk");
+        }
+
+        private void showHidePreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //wbMain.Visible = !wbMain.Visible;
+            if (wbMain.Visible = !wbMain.Visible)
+            {
+                showHidePreviewToolStripMenuItem.Checked = true;
+                splitContainer1.Panel1Collapsed = false;
+                splitContainer1.Panel2Collapsed = false;
+                showHidePreviewToolStripMenuItem.Image = Properties.Resources.Checked;
+            }
+            else
+            {
+                showHidePreviewToolStripMenuItem.Checked = false;
+                splitContainer1.Panel1Collapsed = false;
+                splitContainer1.Panel2Collapsed = true;
+                showHidePreviewToolStripMenuItem.Image = Properties.Resources.EditorPanel;
+            }
+        }
+
+        private void shortcutKeysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ShortcutKeysList().ShowDialog();
         }
 
         private void authorToolStripMenuItem_Click(object sender, EventArgs e)
