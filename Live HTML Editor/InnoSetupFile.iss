@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Live HTML Editor"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "AMX SoftSolutions - AMX Infinity"
 #define MyAppURL "http://www.amxinfinity.tk"
 #define MyAppExeName "Live HTML Editor.exe"
@@ -21,9 +21,9 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputDir=D:\dl
-OutputBaseFilename=setup
-SetupIconFile=E:\Projects\C#\Live HTML Editor\Live HTML Editor\Text Icon.ico
+OutputDir=F:\GitHub\C#\AbuhenaSobuj\Live-HTML-Editor\Live HTML Editor\bin\Release\Installer
+OutputBaseFilename=LiveHTMLEditor_Installer
+SetupIconFile=F:\GitHub\C#\AbuhenaSobuj\Live-HTML-Editor\Live HTML Editor\Text Icon.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -35,8 +35,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "E:\Projects\C#\Live HTML Editor\Live HTML Editor\bin\Release\Live HTML Editor.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\Projects\C#\Live HTML Editor\Live HTML Editor\bin\Release\FastColoredTextBox.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "F:\GitHub\C#\AbuhenaSobuj\Live-HTML-Editor\Live HTML Editor\bin\Release\Live HTML Editor.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "F:\GitHub\C#\AbuhenaSobuj\Live-HTML-Editor\Live HTML Editor\FastColoredTextBox.dll"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
