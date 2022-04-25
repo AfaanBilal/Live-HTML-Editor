@@ -3,7 +3,7 @@ Live HTML Editor
 
 Author: **[Afaan Bilal](https://afaan.dev)**  
 
-##### Project Page: [https://afaan.dev/Live-HTML-Editor](https://afaan.dev/Live-HTML-Editor)
+##### Project Page: [afaan.dev/Live-HTML-Editor](https://afaan.dev/Live-HTML-Editor)
 ##### Download: [Setup, V1.0.0](https://afaan.dev/Live-HTML-Editor/Live-HTML-Editor-1.0.0-Setup.zip)
 
 ## Introduction
